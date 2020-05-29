@@ -6,7 +6,7 @@ import jdk.nashorn.internal.runtime.regexp.joni.ast.Node;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
- * Created by 安利丹 on 2020/3/8.
+ * Created by ww on 2020/3/8.
  */
 public class AQS {
 

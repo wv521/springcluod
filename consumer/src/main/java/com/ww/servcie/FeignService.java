@@ -1,7 +1,6 @@
 package com.ww.servcie;
 
 
-import com.ww.model.UserDO;
 //import org.springframework.cloud.openfeign.FeignClient;
 //@FeignClient(value = "producer-server")
 public interface FeignService {

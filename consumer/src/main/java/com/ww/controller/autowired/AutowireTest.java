@@ -9,6 +9,5 @@ public class AutowireTest {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext();
-
     }
 }
