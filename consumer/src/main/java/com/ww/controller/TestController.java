@@ -1,5 +1,6 @@
 package com.ww.controller;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.time.DayOfWeek;
@@ -12,14 +13,14 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
- * Created by 安利丹 on 2020/2/26.
+ * Created by ww on 2020/2/26.
  */
 public class TestController {
 
     public static void main(String[] args) {
 
-//        ClassPathXmlApplicationContext ctx =
-//                new ClassPathXmlApplicationContext("beans.xml");
+        ClassPathXmlApplicationContext ctx =
+                new ClassPathXmlApplicationContext("beans.xml");
 //        System.out.println(ctx.getId());
 ////        TestBean tb = ctx.getBean(TestBean.class);
 ////        tb.test();\
@@ -43,9 +44,8 @@ public class TestController {
 //        }}
 
 //        System.out.println(Math.round(-1.5));
-        DayOfWeek dayOfWeek = LocalDate.of(2020, 03,13).getDayOfWeek();
-        System.out.println(dayOfWeek);
 
     }
+
 
 }

@@ -17,7 +17,7 @@ public class ProxyTest {
         //
         // interfaces 要代理的接口/接口的实现类
         // InvocationHandler 关联的一个InvocationHandler接口
-        Subject subject = (Subject) Proxy.newProxyInstance(inv.getClass().getClassLoader(), sub.getClass().getInterfaces(), inv);
+        Subject subject = (Subject) Proxy.newProxyInstance(sub.getClass().getClassLoader(), sub.getClass().getInterfaces(), inv);
         subject.hello("hello");
     }
 }

@@ -5,7 +5,7 @@ import com.ww.model.UserDO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(value="zuul-server")
+//@FeignClient(value="zuul-server")
 public interface FeignService {
 
     @RequestMapping(value="/api/producer/getFeignList",method = RequestMethod.GET)

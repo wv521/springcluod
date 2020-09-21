@@ -1,9 +1,9 @@
 package com.ww.controller.suo.countDownLatch;
 
+import com.ww.controller.suo.CallableTest;
+
 import java.util.Date;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * Created by ww on 2020/3/12.
@@ -19,8 +19,23 @@ public class CountDownLatchTest {
         ExecutorService executorService = Executors.newFixedThreadPool(3);  // 定长线程池
 
         executorService.execute(new SeeDoctorTest(countDownLatch));
-        executorService.execute(new QueueTest(countDownLatch));
-
+//        Future<?> submit = executorService.submit(new QueueTest(countDownLatch));
+//        try {
+//            System.out.println(submit.get());
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        }
+        Future submit = executorService.submit(new CallableTest());
+        try {
+            Object o = submit.get();
+            System.out.println(o);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
         try {
             countDownLatch.await();  // 等待其他线程各自完成后，再执行。
             System.out.println("搞定回家！总共耗时："+ (System.currentTimeMillis()-now));

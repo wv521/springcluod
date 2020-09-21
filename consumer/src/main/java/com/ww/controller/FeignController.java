@@ -15,14 +15,6 @@ import java.util.List;
 @RequestMapping(value="/")
 public class FeignController {
 
-    @Value("${space-group.space-project.epark}")
-    private List<Integer> ids1 =  new ArrayList<>();
-
-    @Value("${space-group.space-project.dsyy}")
-    private List<Integer> ids2 =  new ArrayList<>();
-
-    @Value("${space-group.space-project.ksyy}")
-    private List<Integer> ids3 =  new ArrayList<>();
 
     @RequestMapping(value="test")
     public void test(){
@@ -47,13 +39,6 @@ public class FeignController {
 //            }
 //
 //        }
-if(ids3.contains(1)){
-    System.out.println("---------------------");
-}
-//        if(list!=null && list.size()>0)
-////            ids.stream().forEach(e-> System.out.println(e));
-//            System.out.println(list);
-    }
 
 
 //@Autowired
@@ -63,5 +48,5 @@ if(ids3.contains(1)){
 //    public UserDO getFeignList(){
 //        UserDO result =feignService.getFeignList();
 //        return result;
-//    }
+    }
 }

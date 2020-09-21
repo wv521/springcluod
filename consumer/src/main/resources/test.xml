@@ -4,18 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <!--<bean id="car" class="com.ww.controller.spring.Car">-->
-        <!--<property name="name" value="benz"/>-->
-    <!--</bean>-->
-    <!--<bean id="carBeanFactoryPostProcessor1"-->
-          <!--class="com.ww.controller.spring.CarBeanFactoryPostProcessor1">-->
-        <!--<property name="order" value="0" />-->
-    <!--</bean>-->
+    <bean id="car" class="com.ww.controller.spring.Car">
+        <property name="name" value="benz"/>
+    </bean>
+    <bean id="carBeanFactoryPostProcessor1"
+          class="com.ww.controller.spring.CarBeanFactoryPostProcessor1">
+        <property name="order" value="0" />
+    </bean>
 
-    <!--<bean id="carBeanFactoryPostProcessor2"-->
-          <!--class="com.ww.controller.spring.CarBeanFactoryPostProcessor2">-->
-        <!--<property name="order" value="1" />-->
-    <!--</bean>-->
-    <!--<bean id = "mobileBeanFactoryPostProcessor"-->
-        <!--class="com.ww.controller.spring.MobileBeanFactoryPostProcessor" />-->
+    <bean id="carBeanFactoryPostProcessor2"
+          class="com.ww.controller.spring.CarBeanFactoryPostProcessor2">
+        <property name="order" value="1" />
+    </bean>
+    <bean id = "mobileBeanFactoryPostProcessor"
+        class="com.ww.controller.spring.MobileBeanFactoryPostProcessor" />
 </beans>

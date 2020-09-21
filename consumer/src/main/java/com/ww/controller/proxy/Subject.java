@@ -6,7 +6,7 @@ package com.ww.controller.proxy;
  */
 public interface Subject {
 
-    public void rent();
+     void rent();
 
-    public void hello(String str);
+     void hello(String str);
 }

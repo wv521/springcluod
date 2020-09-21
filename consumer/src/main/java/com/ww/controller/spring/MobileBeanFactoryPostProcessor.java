@@ -15,6 +15,7 @@ public class MobileBeanFactoryPostProcessor implements BeanDefinitionRegistryPos
     @Override
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
         System.out.println("=======> 执行MobileBeanFactoryPostProcessor_1");
+        // 手动构建一个beanDefinition
         BeanDefinitionBuilder beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(Mobile.class);
         registry.registerBeanDefinition("mobile", beanDefinitionBuilder.getBeanDefinition());
     }

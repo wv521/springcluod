@@ -21,7 +21,7 @@ public class DongTaiProxy implements InvocationHandler{
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         System.out.println("代理前的操作");
-//        method.invoke(object,args);
+        method.invoke(object,args);
         System.out.println("代理后的操作");
         return null;
     }

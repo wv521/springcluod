@@ -11,7 +11,7 @@ import java.util.List;
 //@FeignClient(value="zuul-server")
 public interface UserService {
 
-    List<UserDO> getList();
+    UserDO getList();
 
 //    @RequestMapping(value = "getFeignList",method = RequestMethod.GET)
 //@RequestMapping(value="/api/producer/getFeignList",method = RequestMethod.GET)

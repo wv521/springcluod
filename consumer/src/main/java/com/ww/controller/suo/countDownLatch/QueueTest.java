@@ -1,5 +1,6 @@
 package com.ww.controller.suo.countDownLatch;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -26,4 +27,5 @@ public class QueueTest implements Runnable{
                 countDownLatch.countDown();
         }
     }
+
 }

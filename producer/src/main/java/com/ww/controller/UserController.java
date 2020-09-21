@@ -15,14 +15,16 @@ import java.util.List;
  * @date 2020-02-15
  */
 @RestController
+@RequestMapping("/provider")
 public class UserController {
 
     @Autowired(required=false)
     private UserService userService;
 
-    @GetMapping(value="getList")
-    public List<UserDO> getList(){
-        List<UserDO> userList =userService.getList();
+    @RequestMapping(value="/getList")
+    public UserDO getList(){
+        System.out.println("1231");
+        UserDO userList =userService.getList();
         return userList;
     }
 

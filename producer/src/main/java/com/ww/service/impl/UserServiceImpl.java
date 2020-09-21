@@ -6,23 +6,27 @@ import com.ww.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author ww
  * @date 2020-02-15
  */
-@Service("feignService")
+@Service
 public class UserServiceImpl implements UserService{
 
     @Autowired(required=false)
     private UserMapper userMapper;
 
     @Override
-    public List<UserDO> getList() {
-
-        List<UserDO> listUser = userMapper.getList();
-        return listUser;
+    public UserDO getList() {
+//        List<UserDO> listUser =  new ArrayList<>();
+        UserDO userDO = new UserDO();
+        userDO.setId(1);
+//        listUser.add(userDO);
+//        List<UserDO> listUser = userMapper.getList();
+        return userDO;
     }
 
     @Override

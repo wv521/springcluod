@@ -7,7 +7,7 @@
 
     <bean id = "Human" class="com.ww.controller.autowired.Human" />
 
-    <bean id="humanService" class="com.ww.controller.autowired.HumanService" autowire="byName"/>
+    <!--<bean id="humanService" class="com.ww.controller.autowired.HumanService" autowire="byName"/>-->
     <!-- 去掉下面的注释，则ignoreDependencyType生效 -->
     <!--<bean class="ai.yunxi.autowired.HumanAutowiringProcessor"/>-->
 
@@ -19,7 +19,7 @@
             </list>
         </constructor-arg>
     </bean>
-    <bean id="ignoreImpl" class="com.ww.controller.autowired.IgnoreImpl" autowire="byName" />
+    <!--<bean id="ignoreImpl" class="com.ww.controller.autowired.IgnoreImpl" autowire="byName" />-->
     <!-- 去掉下面的注释，则ignoreDependencyInterface生效 -->
     <!--<bean class="ai.yunxi.autowired.InterfaceIgnoreProcessor"/>-->
 
