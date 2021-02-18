@@ -16,6 +16,13 @@
           class="com.ww.controller.spring.CarBeanFactoryPostProcessor2">
         <property name="order" value="1" />
     </bean>
-    <bean id = "mobileBeanFactoryPostProcessor"
-        class="com.ww.controller.spring.MobileBeanFactoryPostProcessor" />
+    <!--<bean id="StudentBeanPostProcesses"-->
+          <!--class="com.ww.controller.spring.StudentBeanPostProcesses">-->
+    <!--</bean>-->
+
+    <bean id="TeacherBeanPostProcesses"
+          class="com.ww.controller.spring.TeacherBeanPostProcesses">
+    </bean>
+    <!--<bean id = "mobileBeanFactoryPostProcessor"-->
+        <!--class="com.ww.controller.spring.MobileBeanFactoryPostProcessor" />-->
 </beans>

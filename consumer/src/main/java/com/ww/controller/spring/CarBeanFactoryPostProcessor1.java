@@ -17,8 +17,8 @@ public class CarBeanFactoryPostProcessor1 implements BeanFactoryPostProcessor, O
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory)
             throws BeansException {
         System.out.println("=======> 执行CarBeanFactoryPostProcessor1");
-//        BeanDefinition bd = beanFactory.getBeanDefinition("car");
-//        bd.getPropertyValues().addPropertyValue("name", "bmw");
+        BeanDefinition bd = beanFactory.getBeanDefinition("car");
+        bd.getPropertyValues().addPropertyValue("name", "bmw");
     }
 
     public void setOrder(int order) {

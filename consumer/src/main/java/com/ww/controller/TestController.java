@@ -1,5 +1,6 @@
 package com.ww.controller;
 
+import com.ww.controller.spring.Car;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,9 +21,11 @@ public class TestController {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext ctx =
-                new ClassPathXmlApplicationContext("beans.xml");
+                new ClassPathXmlApplicationContext("test.xml");
 //        System.out.println(ctx.getId());
-////        TestBean tb = ctx.getBean(TestBean.class);
+
+        Car bean = ctx.getBean(Car.class);
+        System.out.println(bean.getName());
 ////        tb.test();\
 
 
